@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos-gral.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/administracion.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/formularios.css">
+
+    <title>LaTienda - Administración</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header></header>
+        <nav></nav>
+
+        <main>
+            <h1 class="titulo">Administración de Productos</h1>
+            <div class="mensajes">area de mensajes</div>
+
+            <div class="agregar">
+                <button class="addcarrito">Agregar Nuevo Producto</button>
+            </div>
+
+            <div id="formAdmin">
+                <section id="AgregarProd">
+                    <form action="" class="formularios" id="nuevoProd">
+                        <h2>Nuevo Producto</h2>
+                        <label for="imagen">Imagen</label>
+                        <input type="file" name="imagen" id="imagen">
+                        <label for="descrpcion">Descrpción</label>
+                        <textarea name="descrpcion" id="descrpcion" rows="8"
+                            placeholder="Escriba la descripción del producto aqui.."></textarea>
+                        <label for="precio">Precio</label>
+                        <input type="number" name="precio" id="precio" placeholder="Ingrese el precio">
+                        <label for="stock">Stock</label>
+                        <input type="number" name="stock" id="stock" placeholder="Ingrese la cantidad disponible">
+
+                        <input type="submit" value="Agregar Producto" >
+                    </form>
+                </section>
+
+                <section id="EditarProd">
+
+                    <form action="" class="formularios" id="actualizar">
+                        <h2>Actualizar Datos</h2>
+                        <label for="imagen">Imagen</label>
+                        <input type="file" name="imagen" id="imagen" >
+                        <label for="descrpcion">Descripción</label>
+                        <textarea name="descrpcion" id="descrpcion" rows="8"></textarea>
+                        <label for="precio">Precio</label>
+                        <input type="number" name="precio" id="precio" >
+                        <label for="stock">Stock</label>
+                        <input type="number" name="stock" id="stock" >
+
+                        <input type="submit" value="Actualizar Producto">
+                    </form>
+                </section>
+            </div>
+
+            <section class="productos">
+
+                <div class="card">
+                    <div class="top">
+                        <img src="images/productos/arandanos.jpg" alt="">
+                        <p class="titProd">PRODUCTO 1</p>
+                        <p class="descrpcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus natus
+                            voluptates incidunt eveniet blanditiis?</p>
+                    </div>
+                    <div class="bottom">
+                        <p class="precio">$3500</p>
+                        <div class="agregar">
+                            <form action="">
+                                <!-- <span>Stock: </span> -->
+                                <span>{20}</span>
+                            </form>
+                            <button class="addcarrito"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="addcarrito"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="top">
+                        <img src="images/productos/cerezas.jpg" alt="">
+                        <p class="titProd">PRODUCTO 2</p>
+                        <p class="descrpcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus natus
+                            voluptates incidunt eveniet blanditiis?</p>
+                    </div>
+                    <div class="bottom">
+                        <p class="precio">$3500</p>
+                        <div class="agregar">
+                            <form action="">
+                                <!-- <span>Stock: </span> -->
+                                <span>{30}</span>
+                            </form>
+                            <button class="addcarrito"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="addcarrito"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="top">
+                        <img src="images/productos/manzanas.jpg" alt="">
+                        <p class="titProd">PRODUCTO 3</p>
+                        <p class="descrpcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus natus
+                            voluptates incidunt eveniet blanditiis?</p>
+                    </div>
+                    <div class="bottom">
+                        <p class="precio">$3500</p>
+                        <div class="agregar">
+                            <form action="">
+                                <!-- <span>Stock: </span> -->
+                                <span>{20}</span>
+                            </form>
+                            <button class="addcarrito"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="addcarrito"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="top">
+                        <img src="images/productos/frutillas.jpg" alt="">
+                        <p class="titProd">PRODUCTO 4</p>
+                        <p class="descrpcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus natus
+                            voluptates incidunt eveniet blanditiis?</p>
+                    </div>
+                    <div class="bottom">
+                        <p class="precio">$3500</p>
+                        <div class="agregar">
+                            <form action="">
+                                <!-- <span>Stock: </span> -->
+                                <span>{20}</span>
+                            </form>
+                            <button class="addcarrito"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="addcarrito"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <footer></footer>
+
+    </div>
+
+    <script src="./js/modulos.js"></script>
+</body>
+
+</html>

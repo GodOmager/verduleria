@@ -1,0 +1,182 @@
+ /* first mobil */
+header {
+    width: 100%;
+    padding: 20px 10px;
+    background-color: var(--acento);
+    border-left: 5px solid var(--acento);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+}
+
+header img {
+    height: 35px;
+    margin-right: 5px;
+
+}
+
+header .usuario a {
+    padding: 5px;
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
+header .usuario i {
+    font-size: 1.4em;
+}
+
+
+header p {
+    font-size: 2em;
+    color: var(--color-principal);
+} 
+
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 78px;
+    z-index: 3000;
+    display: flex;
+    flex-direction: column;
+}
+
+nav label {
+    width: 100%;
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    padding: 8px 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav .btn {   
+
+    font-size: 1.5em; 
+    cursor: pointer;
+}
+
+nav #open-menu {
+    display: none;
+}
+
+nav .link {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background: var(--transparencia);
+    margin-left: -60%;
+    transition: all 0.5s;
+}
+
+
+nav .link a {
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 15px;
+    border-top: 1px solid var(--color-secundario);
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   
+}
+
+nav .link a i {
+    color: var(--acento);
+}
+
+nav #open-menu:checked ~ .link{
+    margin-left: 0;
+}
+
+.formBuscar {
+    border: 1px solid var(--color-secundario);
+    /* padding: 5px; */
+    border-radius: 5px;
+    background: var(--color-secundario);
+
+}
+
+.formBuscar i {
+    color: var(--color-principal);
+    padding: 8px
+}
+
+.formBuscar input {
+    background: transparent;
+    padding: 8px;
+    border: 0;
+    outline: none;
+    min-width: 200px;
+    max-width: 250px;
+    font-size: 1.2em;
+ 
+}
+
+header .formBuscar{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    /* breakpoint para tablet */
+    nav {
+        top: 80px;
+    }
+
+    nav label {
+        display: none;
+    }
+
+    header .usuario a {
+        padding: 10px;
+    }
+
+    nav .link {
+        margin-left: 0;
+        width: 100%;
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    nav .link a {
+        border-top: 0;
+        margin: 5px;
+    }
+
+    nav .link a:hover{
+        color: var(--acento)
+     }
+ 
+     nav .link a:hover i {
+         color: var(--color-secundario);
+     }
+
+    header .formBuscar{
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    /* breakpoint para pc */
+    nav .link a:hover{
+       color: var(--acento)
+    }
+
+    nav .link a:hover i {
+        color: var(--color-secundario);
+    }
+
+}
