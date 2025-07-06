@@ -23,11 +23,43 @@
     "stock": 98
 },
 {
-    "id": 2,
+    "id": 4,
     "title": "Cerezas",
     "price": 10000,
     "description": "Kaboom rico",
     "image": "images/productos/cerezas.jpg",
     "stock": 1
+},
+{
+    "id": 5,
+    "title": "Arandanos",
+    "price": 7000,
+    "description": "HOLA ESTO ES UN EASTER EGG",
+    "image": "images/productos/arandanos.jpg",
+    "stock": 42
+},
+{
+    "id": 6,
+    "title": "Manzanas",
+    "price": 432000,
+    "description": "Manzanas rojas listas para ser comidas (no me fije la imagen, espero sean rojas",
+    "image": "images/productos/manzanas.jpg",
+    "stock": 129
+},
+{
+    "id": 7,
+    "title": "Bananas",
+    "price": 4330,
+    "description": "Bananas amarillas",
+    "image": "images/productos/bananas.jpg",
+    "stock": 129
+},
+{
+    "id": 8,
+    "title": "Frambuesas",
+    "price": 2320,
+    "description": "F",
+    "image": "images/productos/frambuesas.jpg",
+    "stock": 129
 }
 ]
