@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                     <div class="agregar">
                         <div class="amount">
                             <span class="descrpcion"> Cant </span>
-                            <input type="number" name="cant" id="cant-${item.id}" min="0" value="1" max="${item.stock}">
+                            <input type="number" name="cant" id="cant-${item.id}" min="0" max="${item.stock}">
                         </div>
                         <button class="addcarrito" id ="addCarrito"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
@@ -43,6 +43,8 @@ document.addEventListener("DOMContentLoaded",()=>{
             contenedorProd.appendChild(card)
             //Evento boton agregar
             card.querySelector("#addCarrito").onclick = () => {
+                item.cant = Number(card.querySelector("#cant-"+item.id).value);
+                console.log(item);
                 agregarAlCarrito(item)
             }
             
